@@ -9,6 +9,8 @@
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
+          { nix.registry.nixpkgs.flake = nixpkgs; }
+          ./configuration.nix
           nixos-wsl.nixosModules.default
           {
             system.stateVersion = "24.05";
