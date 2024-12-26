@@ -1,6 +1,10 @@
 { config, pkgs, ...}:
 
 {
+  imports = [
+    ./language.nix
+  ];
+
   # TODO pleasechange the username & homedirectory to your own
   home.username = "nixos";
   home.homeDirectory = "/home/nixos";
