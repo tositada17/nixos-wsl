@@ -4,9 +4,10 @@
     nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
     home-manager.url = "github:nix-community/home-manager/release-24.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
 
-  outputs = inputs@{ self, nixpkgs, nixos-wsl, home-manager, ... }: {
+  outputs = inputs@{ self, nixpkgs, nixos-wsl, home-manager, vscode-server ... }: {
     nixosConfigurations = {
       nixos = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -31,6 +32,12 @@
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
           }
+
+          vscode-server.nixosModules.default
+            ({ config, pkgs, ... }: {
+              services.vscode-server.enable = true;
+            })
+
         ];
       };
     }; 
