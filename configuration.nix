@@ -14,6 +14,7 @@
     vim
     gh
     wget
+    nix-ld-rs 
   ];
 
   environment.variables.EDITOR = "vim";
@@ -21,6 +22,9 @@
   wsl.enable = true;
   wsl.defaultUser = "nixos";
   
+  programs = {
+    nix-ld.enable = true;
+  };
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
