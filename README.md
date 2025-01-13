@@ -10,4 +10,10 @@ $ cd /etc/nixos
 $ nix flake check
 $ sudo nixos-rebuild switch
 ```
-=
+
+# use develop enviroment  
+`nix develop` default read flake.nix  
+
+```bash
+[nixos/]$ nix develop ./develop/python3.12/
+```
