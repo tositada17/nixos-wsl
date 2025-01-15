@@ -14,5 +14,11 @@ $poetory add django
 
 ```
 poetry shell
-python xxx 
+python xxx
+```
+
+# for vscode  
+
+```
+poetry add pylance
 ```
