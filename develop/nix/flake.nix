@@ -12,6 +12,7 @@
     devShells.x86_64-linux.default = pkgs.mkShellNoCC {
       packages = with pkgs;[
         nixd
+        nixpkgs-fmt
       ];
     };
   };

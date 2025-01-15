@@ -1,0 +1,5 @@
+{
+    "nix.enableLanguageServer": true,
+    "nix.serverPath": "/nix/store/x4ispr46q71rw3g89xkk0w9x6ilfsszn-nixd-2.5.1/bin/nixd",
+    "nix.formatterPath": "/nix/store/sxxwm1pbmx8y03gk927f7w49bq52vrl5-nixpkgs-fmt-1.3.0/bin/nixpkgs-fmt"
+}
