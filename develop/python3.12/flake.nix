@@ -13,6 +13,8 @@
       packages = with pkgs;[
         python312Full
         poetry
+        aws-sam-cli
+        awscli2
       ];
     };
   };
