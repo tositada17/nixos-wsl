@@ -1,24 +1,18 @@
-# install package  
-python312
-poetory
+# install package
+
+nixd  
+nixpkgs-fmt  
 
 # how to use  
 
-# package install  
+## install package
 
-```
-$poetory add django
-```
+install  vscode extention `nix-ide`
 
-# run python 
+add symblick link vscode setting.json
 
-```
-poetry shell
-python xxx
+```bash
+ln -s vscode-server/setting.json ~/.vscode-server/data/Machine/setting.json
 ```
 
-# for vscode  
-
-```
-poetry add pylance
-```
+open nix file
