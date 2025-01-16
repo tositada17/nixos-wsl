@@ -14,7 +14,8 @@
   
   neofetch
   nnn # terminal file manager
-  
+  lazygit
+
   # archives
   zip
   xz
