@@ -3,8 +3,11 @@ description: build tarball
 runs:
   using: composite
   steps:
-    - name: Install Nix
-      uses: ./.github/actions/install-nix
+    - name: Build taball bilder
+      id: buildBuilder
+      uses: ./.github/actions/build-nix-expression
+      with:
+        expression: '.#nixosConfigurations.default.config.system.build.tarballBuilder'
 
     - name: Build tarball
       shell: bash
