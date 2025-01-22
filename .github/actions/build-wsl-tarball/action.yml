@@ -1,8 +1,11 @@
-name: aaa
-description: aaa
+name: build tarball
+description: build tarball
 runs:
   using: composite
   steps:
+    - name: Install Nix
+      uses: ./.github/actions/install-nix
+
     - name: Build tarball
       shell: bash
       run: |
