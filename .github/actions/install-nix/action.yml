@@ -16,6 +16,4 @@ runs:
         fi
     - name: Install nix
       if: ${{steps.check-nix.nix-found != 'true' }}
-      uses: cachix/install-nix-action@v30
-      with:
-        github_access_token: ${{ github.token}}
+      uses: nixbuild/nix-quick-install-action@v29
