@@ -14,3 +14,6 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: InStall Nix
+        uses: ./.github/actions/install-nix
+
