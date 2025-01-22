@@ -1,0 +1,10 @@
+name: aaa
+description: aaa
+runs:
+  using: composite
+  steps:
+    - name: Build tarball
+      shell: bash
+      run: |
+        sudo nix run .#nixosConfigurations.nixos.config.system.build.tarballBuilder
+        ls
