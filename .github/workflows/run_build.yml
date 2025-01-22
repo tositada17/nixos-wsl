@@ -14,8 +14,11 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: InStall Nix
+      - name: Install Nix
         uses: ./.github/actions/install-nix
+
+      - name: build tarball
+        uses: ./.github/actions/build-wsl-tarball
 
 
 
