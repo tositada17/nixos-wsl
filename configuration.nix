@@ -30,6 +30,11 @@
     nix-ld.enable = true;
   };
 
+  systemd.user.services = {
+    auto-fix-vscode-server={
+      enable = true;
+    };
+  };
   users.users.nixos.extraGroups = [ "docker" ];
   wsl.enable = true;
   wsl.defaultUser = "nixos";
