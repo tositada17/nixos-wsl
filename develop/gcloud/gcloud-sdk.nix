@@ -6,9 +6,11 @@ let
     gke-gcloud-auth-plugin
   ]);
 in
+
 pkgs.mkShell{
   packages = with pkgs; [
     pkgs.google-cloud-sdk
     gke
+    pkgs.terraform-docs
   ];
 }
