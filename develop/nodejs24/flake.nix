@@ -16,6 +16,9 @@
       ];
 
       shellHook = ''
+        export project='nodejs22'
+        export PS1=($project)$PS1
+
         npm config set prefix '~/.npm-global'
         export PATH=~/.npm-global/bin:$PATH
       '';
