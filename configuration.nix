@@ -15,6 +15,7 @@
     gh
     wget
     nix-ld-rs
+    neovim
   ];
 
   environment.variables.EDITOR = "vim";
