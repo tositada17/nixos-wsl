@@ -5,13 +5,14 @@
     ./language.nix
   ];
 
+
   # TODO pleasechange the username & homedirectory to your own
   home.username = "nixos";
   home.homeDirectory = "/home/nixos";
 
   # Packages that should be installed to user profile.
   home.packages = with pkgs; [
-  
+
   neofetch
   nnn # terminal file manager
   lazygit
@@ -28,7 +29,7 @@
   yq-go # yaml processor https://github.com/mikefarah/yq
   eza # A modern replacement for `ls`
   fzf # A command-line fuzzy finder
-  
+
   # networking tools
   mtr # A netowrk diagnostic tool
   iperf3
@@ -53,11 +54,11 @@
   # nix related
   #
   #  it provides the command `nom` works just like `nix`
-  #  with more detail log output  
+  #  with more detail log output
   nix-output-monitor
-  
 
-  # productivity 
+
+  # productivity
   hugo # static site generator
   glow # markdown previewer in terminal
 
@@ -77,11 +78,11 @@
   pciutils # lspci
   usbutils #lsusb
   ];
-  
-  # you can update home Manager without changing this value. 
+
+  # you can update home Manager without changing this value.
   # See the home Manager release notes for list of state version
   # changes in each releace.
-  home.stateVersion = "25.05";
+  home.stateVersion = "25.11";
 
   # Let home Manager install and manage itself
   programs.home-manager.enable = true;
