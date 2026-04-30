@@ -13,6 +13,8 @@ pkgs.mkShell{
     azure-cli-extentions
     pkgs.pulumi
     pkgs.go
+    pkgs.pulumiPackages.pulumi-go
+    pkgs.pulumiPackages.pulumi-azure-native
   ];
 
   shellHook = ''
