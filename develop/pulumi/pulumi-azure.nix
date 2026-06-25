@@ -11,10 +11,9 @@ in
 pkgs.mkShell{
   packages = [
     azure-cli-extentions
-    pkgs.pulumi
-    pkgs.go
-    pkgs.pulumiPackages.pulumi-go
-    pkgs.pulumiPackages.pulumi-azure-native
+    pkgs.pulumi-bin
+    pkgs.nodejs_24
+    pkgs.pulumi-esc
   ];
 
   shellHook = ''
