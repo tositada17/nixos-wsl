@@ -1,8 +1,8 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
-    nixos-wsl.url = "github:nix-community/nixos-wsl/release-25.11";
-    home-manager.url = "github:nix-community/home-manager/release-25.11";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
+    nixos-wsl.url = "github:nix-community/nixos-wsl/release-26.05";
+    home-manager.url = "github:nix-community/home-manager/release-26.05";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
     vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
@@ -16,7 +16,7 @@
           #wsl-setting
           nixos-wsl.nixosModules.default
           {
-            system.stateVersion = "25.11";
+            system.stateVersion = "26.05";
             wsl.enable = true;
           }
 
@@ -26,7 +26,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.nixos = import ./home/programs/home.nix;
-
+          
             # Optionally, use home-manager.extraSpecialArgs to pass
             # arguments to home.nix
           }

@@ -13,7 +13,7 @@
   # Packages that should be installed to user profile.
   home.packages = with pkgs; [
 
-  neofetch
+  fastfetch
   nnn # terminal file manager
   lazygit
 
@@ -82,7 +82,7 @@
   # you can update home Manager without changing this value.
   # See the home Manager release notes for list of state version
   # changes in each releace.
-  home.stateVersion = "25.11";
+  home.stateVersion = "26.05";
 
   # Let home Manager install and manage itself
   programs.home-manager.enable = true;
